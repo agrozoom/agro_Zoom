@@ -1,0 +1,276 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+.header {
+    background-color: whitesmoke;
+    color: #00cc11;
+    text-align: center;
+    padding: 5vh;
+    border: 3px solid #00cc11;
+}
+
+.header .titulo img{
+    width: 15%;
+    height: 15%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+a img {
+    position: absolute;
+    width: 90px;
+    height: 45px;
+    right: 15vh;
+    top: 7.2vh;
+}
+
+.logado {
+    position: absolute;
+    top: 5.5vh;
+    left: 10vh;
+    width: 10vh;
+    height: 10vh;
+}
+  
+nav {
+    background-color: #333; /* dark gray background */
+    padding: 10px;
+    text-align: center;
+}
+  
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10vh;
+}
+  
+nav li {
+    margin-right: 20px;
+    position: relative; /* added for dropdown positioning */
+}
+  
+nav a {
+    color: whitesmoke; /* white text color */
+    text-decoration: none;
+    transition: color 0.2s ease;
+    background-color: #444; /* dark gray background for text */
+    padding: 5px 10px; /* add some padding to the text */
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+  
+nav a:hover {
+    color: #00cc11;
+    background-color: rgb(230, 230, 230);
+}
+
+nav li:hover ul {
+    display: block; 
+}
+  
+nav li ul li {
+    margin-right: 0;
+}
+  
+nav li ul a {
+    color: #fff;
+    background-color: #444;
+    padding: 5px 10px; 
+}
+  
+nav li ul a:hover {
+    color: #ccc;
+    background-color: #555;
+}
+  
+nav li > a:after {
+    content: "▾";
+    font-size: 12px;
+    margin-left: 5px;
+}
+  
+nav li ul li > a:after {
+    content: "";
+}
+/* Conteúdo */
+.main {
+    padding: 20px;
+}
+  
+.container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+  
+.title {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+  
+.adubo {
+    background-color: #508350;
+    color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 35px;
+}
+  
+.title2 {
+    background-color: #fa0c0c;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+  
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+  
+.column {
+    flex: 0 0 calc(50% - 20px);
+    background: linear-gradient(to bottom, #84f166, #2cb66a);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+  
+.column:nth-child(even) {
+    margin-left: 20px;
+}
+  
+.column:last-child {
+    margin-right: 0;
+}
+  
+nav {
+    background-color: #333; /* dark gray background */
+    padding: 10px;
+    text-align: center;
+}
+  
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10vh;
+}
+  
+nav li {
+    margin-right: 20px;
+    position: relative; /* added for dropdown positioning */
+}
+  
+nav a {
+    color: whitesmoke; /* white text color */
+    text-decoration: none;
+    transition: color 0.2s ease;
+    background-color: #444; /* dark gray background for text */
+    padding: 5px 10px; /* add some padding to the text */
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+  
+nav a:hover {
+    color: #00cc11;
+    background-color: rgb(230, 230, 230);
+}
+
+nav li:hover ul {
+    display: block; 
+}
+  
+nav li ul li {
+    margin-right: 0;
+}
+  
+nav li ul a {
+    color: #fff;
+    background-color: #444;
+    padding: 5px 10px; 
+}
+  
+nav li ul a:hover {
+    color: #ccc;
+    background-color: #555;
+}
+  
+nav li > a:after {
+    content: "▾";
+    font-size: 12px;
+    margin-left: 5px;
+}
+  
+nav li ul li > a:after {
+    content: "";
+}
+
+.login-button {
+    position: absolute;
+    top: 8vh;
+    left: 15vh;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.login-button:hover {
+    background-color: #3e8e41;
+}
+
+.footer {
+    background-color: whitesmoke;
+    color: #444444;
+    text-align: center;
+    border: 3px solid #00cc11;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p{
+    position: relative;
+    top: 7px;
+}
+
+.footer a{
+    position: relative;
+    color: #383838;
+    transition: color 0.3s ease;
+    left: 95vh;
+    top: -8spx;
+    text-decoration: none;
+    margin-right: 5%;
+}
+
+.footer a:hover{
+    color: #888888;
+}
